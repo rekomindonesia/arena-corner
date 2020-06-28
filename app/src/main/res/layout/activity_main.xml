@@ -4,24 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mediasoftindonesia.taniapps.MainActivity">
+    tools:context="com.mediasoftindonesia.serviceapps.activity.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- bottom navigation -->
-        <include layout="@layout/layout_bottom_navigation" />
-
         <FrameLayout
             android:id="@+id/content"
             android:layout_width="match_parent"
-            android:layout_height="558dp"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true">
-
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/bottom_menu">
         </FrameLayout>
+
+        <!-- bottom navigation -->
+        <include
+            android:id="@+id/bottom_menu"
+            layout="@layout/layout_bottom_navigation" />
 
     </RelativeLayout>
 

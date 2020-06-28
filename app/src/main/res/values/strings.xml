@@ -1,5 +1,17 @@
 <resources>
-    <string name="app_name">TaniApps</string>
-    <string name="lipsum">Paragraf atau alinea merupakan sekumpulan kalimat yang saling berkaitan antara kalimat yang satu dengan kalimat yang lain. Paragraf juga disebut sebagai karangan singkat, karena dalam bentuk inilah penulis menuangkan ide atau pikirannya sehingga membentuk suatu topik atau tema pembicaraan. Dalam 1 paragraf terdapat beberapa bentuk kalimat, kalimat-kalimat itu ialah kalimat pengenal, kalimat utama (kalimat topik), kalimat penjelas, dan kalimat penutup. Kalimat-kalimat ini terangkai menjadi satu kesatuan yang dapat membentuk suatu gagasan. Panjang pendeknya suatu paragraf dapat menjadi penentu seberapa banyak ide pokok paragraf yang dapat diungkapkan. terdapat paragraf induktif dan deduktif.Paragraf atau alinea merupakan sekumpulan kalimat yang saling berkaitan antara kalimat yang satu dengan kalimat yang lain. Paragraf juga disebut sebagai karangan singkat, karena dalam bentuk inilah penulis menuangkan ide atau pikirannya sehingga membentuk suatu topik atau tema pembicaraan. Dalam 1 paragraf terdapat beberapa bentuk kalimat, kalimat-kalimat itu ialah kalimat pengenal, kalimat utama (kalimat topik), kalimat penjelas, dan kalimat penutup. Kalimat-kalimat ini terangkai menjadi satu kesatuan yang dapat membentuk suatu gagasan. Panjang pendeknya suatu paragraf dapat menjadi penentu seberapa banyak ide pokok paragraf yang dapat diungkapkan. terdapat paragraf induktif dan deduktif.Paragraf atau alinea merupakan sekumpulan kalimat yang saling berkaitan antara kalimat yang satu dengan kalimat yang lain. Paragraf juga disebut sebagai karangan singkat, karena dalam bentuk inilah penulis menuangkan ide atau pikirannya sehingga membentuk suatu topik atau tema pembicaraan. Dalam 1 paragraf terdapat beberapa bentuk kalimat, kalimat-kalimat itu ialah kalimat pengenal, kalimat utama (kalimat topik), kalimat penjelas, dan kalimat penutup. Kalimat-kalimat ini terangkai menjadi satu kesatuan yang dapat membentuk suatu gagasan. Panjang pendeknya suatu paragraf dapat menjadi penentu seberapa banyak ide pokok paragraf yang dapat diungkapkan. terdapat paragraf induktif dan deduktif.</string>
-    <string name="app_intro_skip">Skip</string>
+    <string name="app_name">Arena Corner</string>
+
+    <string-array name="time">
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+    </string-array>
 </resources>

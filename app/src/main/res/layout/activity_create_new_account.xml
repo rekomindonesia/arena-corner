@@ -1,195 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="com.mediasoftindonesia.taniapps.CreateNewAccountActivity">
+    tools:context="com.mediasoftindonesia.serviceapps.activity.CreateNewAccountActivity">
 
-    <android.support.constraint.Guideline
-        android:id="@+id/v_guideline1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/border_new_account">
 
-    <android.support.constraint.Guideline
-        android:id="@+id/v_guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
 
-    <android.support.constraint.Guideline
-        android:id="@+id/h_guideline1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.18" />
-
-
-    <ImageView
-        android:id="@+id/border"
-        android:layout_width="300dp"
-        android:layout_height="340dp"
-        android:src="@drawable/border_new_account"
-        app:layout_constraintEnd_toStartOf="@+id/v_guideline2"
-        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-        app:layout_constraintTop_toTopOf="@+id/h_guideline1" />
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textIpnutLayout1"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
-        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
-        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
-        app:layout_constraintTop_toTopOf="@+id/h_guideline1">
-
-        <EditText
-            android:id="@+id/nameEditText"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textIpnutLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/black"
-            android:textColorLink="@android:color/white"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-            app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
-            app:layout_constraintTop_toTopOf="@+id/h_guideline3" />
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
-    </android.support.design.widget.TextInputLayout>
+            <EditText
+                android:id="@+id/edit_text_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Name"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorLink="@android:color/white" />
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textIpnutLayout2"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
-        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/textIpnutLayout1">
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/emailEditText"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textIpnutLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/black"
-            android:textColorLink="@android:color/white"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-            app:layout_constraintRight_toLeftOf="@+id/v_guideline2" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
-    </android.support.design.widget.TextInputLayout>
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Email"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorLink="@android:color/white" />
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textIpnutLayout3"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
-        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/textIpnutLayout2">
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/passwordEditText"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textIpnutLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/black"
-            android:textColorLink="@android:color/white"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-            app:layout_constraintRight_toLeftOf="@+id/v_guideline2" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
-    </android.support.design.widget.TextInputLayout>
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Password"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorLink="@android:color/white" />
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textIpnutLayout4"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
-        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/textIpnutLayout3">
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/noTelpEditText"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textIpnutLayout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:ems="10"
-            android:inputType="number"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/black"
-            android:textColorLink="@android:color/white"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-            app:layout_constraintRight_toLeftOf="@+id/v_guideline2" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
-    </android.support.design.widget.TextInputLayout>
+            <EditText
+                android:id="@+id/edit_text_noTelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Number phone"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorLink="@android:color/white" />
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textIpnutLayout5"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
-        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/textIpnutLayout4">
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/alamatEditText"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textIpnutLayout5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:ems="10"
-            android:inputType="textCapSentences"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/black"
-            android:textColorLink="@android:color/white"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-            app:layout_constraintRight_toLeftOf="@+id/v_guideline2" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
 
-    </android.support.design.widget.TextInputLayout>
+            <EditText
+                android:id="@+id/edit_text_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Address"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:inputType="textCapSentences"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorLink="@android:color/white"/>
 
-    <Button
-        android:id="@+id/signUpButton"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:background="@drawable/create_button_login"
-        android:text="SIGN UP"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="18dp"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
-        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textIpnutLayout5" />
+        </android.support.design.widget.TextInputLayout>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintEnd_toStartOf="@+id/v_guideline2"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/farmer" />
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/create_button_login"
+            android:text="Sign Up"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:layout_margin="15dp"
+            android:layout_below="@id/linear_layout"/>
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress_bar_login"
+        android:visibility="gone"
+        layout="@layout/layout_progress_bar"/>
+
+</RelativeLayout>

@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "com.mediasoftindonesia.taniapps"
+        applicationId "com.mediasoftindonesia.serviceapps"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
@@ -26,32 +26,30 @@ android {
             }
         }
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.github.ittianyu:BottomNavigationViewEx:1.1.9'
-    compile 'com.github.ksoichiro:android-observablescrollview:1.5.0'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.daimajia.slider:library:1.1.5@aar'
-    compile 'com.squareup.picasso:picasso:2.3.2'
-    compile 'com.github.paolorotolo:appintro:3.3.0'
-    compile 'com.android.support:design:26.1.0'
-    compile 'com.android.support:appcompat-v7:26.1.0'
-    compile 'de.hdodenhof:circleimageview:2.1.0'
-    compile 'com.android.support:cardview-v7:26.1.0'
-    compile 'com.android.support:recyclerview-v7:26.1.0'
-    compile 'com.google.android.gms:play-services-maps:10.2.4'
-    testCompile 'junit:junit:4.12'
-    implementation files('/Users/macair/Documents/Retrofit_library_dependencies/converter-gson-2.2.0.jar')
-    implementation files('/Users/macair/Documents/Retrofit_library_dependencies/gson-2.6.2.jar')
-    implementation files('/Users/macair/Documents/Retrofit_library_dependencies/okhttp-3.6.0.jar')
-    implementation files('/Users/macair/Documents/Retrofit_library_dependencies/okio-1.11.0.jar')
-    implementation files('/Users/macair/Documents/Retrofit_library_dependencies/retrofit-2.2.0.jar')
-    implementation files('/Users/macair/Downloads/PhotoUtil-master/PhotoUtil.jar')
-    implementation files('libs/GenAsync.1.2.jar')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:1.1.9'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //Network
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.3.0'
+
+
+    testImplementation 'junit:junit:4.12'
 }
